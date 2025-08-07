@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canlı Futbol ALT/ÜST AI Tahmini</title>
+</head>
+<body style="font-family:sans-serif; text-align:center; padding-top:50px;">
+    <h1>⚽ AI Canlı ALT / ÜST Tahmini</h1>
+    <form method="POST">
+        <label>xG Ev Sahibi: </label>
+        <input type="text" name="xg_ev"><br><br>
+        <label>xG Deplasman: </label>
+        <input type="text" name="xg_dep"><br><br>
+        <button type="submit">Tahmin Et</button>
+    </form>
+
+    {% if tahmin_ev %}
+        <h2>Ev Tahmini: {{ tahmin_ev }}</h2>
+        <h2>Deplasman Tahmini: {{ tahmin_dep }}</h2>
+    {% endif %}
+</body>
+</html>
