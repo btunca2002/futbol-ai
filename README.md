@@ -1,0 +1,2 @@
+# futbol-ai
+Ai nostradamus
